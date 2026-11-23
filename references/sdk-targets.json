@@ -1,0 +1,216 @@
+{
+  "contract_fingerprint": "b06781a26c4469e8f12830a04d455957bf620d42b9e1df155e93ee00f293d1c9",
+  "sdk_targets_version": "1.1.0",
+  "targets": [
+    {
+      "identity": {
+        "coordinates": "codejackrabbit-sdk@0.3.4",
+        "ecosystem": "npm",
+        "entry": "",
+        "import": "const sdk = require(\"codejackrabbit-sdk\");"
+      },
+      "operations": {
+        "analyzeContractDrift": {
+          "member": "analysis.analyzeContractDrift",
+          "method": "POST",
+          "path": "/v1/analysis/contract-drift",
+          "resource": "analysis",
+          "signature": "client.analysis.analyzeContractDrift(body, requestOptions?)"
+        },
+        "analyzePerfFinOps": {
+          "member": "analysis.analyzePerfFinOps",
+          "method": "POST",
+          "path": "/v1/analysis/perf-finops",
+          "resource": "analysis",
+          "signature": "client.analysis.analyzePerfFinOps(body, requestOptions?)"
+        },
+        "analyzeSupplyChain": {
+          "member": "supplyChain.analyze",
+          "method": "POST",
+          "path": "/v1/supply-chain/analyze",
+          "resource": "supplyChain",
+          "signature": "client.supplyChain.analyze(body, requestOptions?)"
+        },
+        "buildAutofixBundle": {
+          "member": "reviews.buildAutofixBundle",
+          "method": "POST",
+          "path": "/v1/reviews/autofix",
+          "resource": "reviews",
+          "signature": "client.reviews.buildAutofixBundle(body, requestOptions?)"
+        },
+        "collectDeveloperAudit": {
+          "member": "developerIntelligence.collectAudit",
+          "method": "POST",
+          "path": "/cli/managed/developer-audit",
+          "resource": "developerIntelligence",
+          "signature": "client.developerIntelligence.collectAudit(body, requestOptions?)"
+        },
+        "computeRiskRadar": {
+          "member": "reviews.computeRiskRadar",
+          "method": "POST",
+          "path": "/v1/reviews/risk-radar",
+          "resource": "reviews",
+          "signature": "client.reviews.computeRiskRadar(body, requestOptions?)"
+        },
+        "createCodingTask": {
+          "member": "tasks.createCoding",
+          "method": "POST",
+          "path": "/v1/tasks",
+          "resource": "tasks",
+          "signature": "client.tasks.createCoding(body, requestOptions?)"
+        },
+        "createReview": {
+          "member": "reviews.create",
+          "method": "POST",
+          "path": "/v1/reviews",
+          "resource": "reviews",
+          "signature": "client.reviews.create(body, requestOptions?)"
+        },
+        "currentDeveloperIdentity": {
+          "member": "developerIntelligence.currentIdentity",
+          "method": "POST",
+          "path": "/cli/managed/developer-identity",
+          "resource": "developerIntelligence",
+          "signature": "client.developerIntelligence.currentIdentity(body, requestOptions?)"
+        },
+        "declareDeveloperProjectContext": {
+          "member": "developerIntelligence.declareProjectContext",
+          "method": "POST",
+          "path": "/cli/managed/audit-context",
+          "resource": "developerIntelligence",
+          "signature": "client.developerIntelligence.declareProjectContext(body, requestOptions?)"
+        },
+        "evaluateComplianceGate": {
+          "member": "compliance.evaluateGate",
+          "method": "POST",
+          "path": "/v1/compliance/gate",
+          "resource": "compliance",
+          "signature": "client.compliance.evaluateGate(body, requestOptions?)"
+        },
+        "exportSarif": {
+          "member": "compliance.exportSarif",
+          "method": "POST",
+          "path": "/v1/compliance/sarif",
+          "resource": "compliance",
+          "signature": "client.compliance.exportSarif(body, requestOptions?)"
+        },
+        "finalizeMeteringQuota": {
+          "member": "saas.finalizeMeteringQuota",
+          "method": "POST",
+          "path": "/v1/saas/metering/finalize",
+          "resource": "saas",
+          "signature": "client.saas.finalizeMeteringQuota(body, requestOptions?)"
+        },
+        "generateSbom": {
+          "member": "sbom.generate",
+          "method": "POST",
+          "path": "/v1/sbom",
+          "resource": "sbom",
+          "signature": "client.sbom.generate(body, requestOptions?)"
+        },
+        "getAnalyticsRoi": {
+          "member": "analytics.getRoi",
+          "method": "GET",
+          "path": "/v1/analytics/roi",
+          "resource": "analytics",
+          "signature": "client.analytics.getRoi(requestOptions?)"
+        },
+        "getCapabilities": {
+          "member": "capabilities.get",
+          "method": "GET",
+          "path": "/v1/capabilities",
+          "resource": "capabilities",
+          "signature": "client.capabilities.get(requestOptions?)"
+        },
+        "getHealth": {
+          "member": "health.get",
+          "method": "GET",
+          "path": "/health",
+          "resource": "health",
+          "signature": "client.health.get(requestOptions?)"
+        },
+        "getSaasBlueprint": {
+          "member": "saas.getBlueprint",
+          "method": "GET",
+          "path": "/v1/saas/blueprint",
+          "resource": "saas",
+          "signature": "client.saas.getBlueprint(requestOptions?)"
+        },
+        "getTriageQueue": {
+          "member": "triage.getQueue",
+          "method": "GET",
+          "path": "/v1/triage",
+          "resource": "triage",
+          "signature": "client.triage.getQueue(requestOptions?)"
+        },
+        "issueSurfaceLease": {
+          "member": "saas.issueSurfaceLease",
+          "method": "POST",
+          "path": "/v1/saas/surface-lease/issue",
+          "resource": "saas",
+          "signature": "client.saas.issueSurfaceLease(body, requestOptions?)"
+        },
+        "listCodingTasks": {
+          "member": "tasks.listCoding",
+          "method": "GET",
+          "path": "/v1/tasks",
+          "resource": "tasks",
+          "signature": "client.tasks.listCoding(requestOptions?)"
+        },
+        "listWaitlist": {
+          "member": "waitlist.list",
+          "method": "GET",
+          "path": "/v1/waitlist",
+          "resource": "waitlist",
+          "signature": "client.waitlist.list(requestOptions?)"
+        },
+        "managedAuditSnapshots": {
+          "member": "developerIntelligence.managedAuditSnapshots",
+          "method": "POST",
+          "path": "/cli/managed/audit-snapshots",
+          "resource": "developerIntelligence",
+          "signature": "client.developerIntelligence.managedAuditSnapshots(body, requestOptions?)"
+        },
+        "planStackedPrSplit": {
+          "member": "analysis.planStackedPrSplit",
+          "method": "POST",
+          "path": "/v1/analysis/split-pr",
+          "resource": "analysis",
+          "signature": "client.analysis.planStackedPrSplit(body, requestOptions?)"
+        },
+        "providerCostEvidence": {
+          "member": "developerIntelligence.providerCostEvidence",
+          "method": "POST",
+          "path": "/cli/managed/finops",
+          "resource": "developerIntelligence",
+          "signature": "client.developerIntelligence.providerCostEvidence(body, requestOptions?)"
+        },
+        "registerWaitlist": {
+          "member": "waitlist.register",
+          "method": "POST",
+          "path": "/v1/waitlist",
+          "resource": "waitlist",
+          "signature": "client.waitlist.register(body, requestOptions?)"
+        },
+        "reserveMeteringQuota": {
+          "member": "saas.reserveMeteringQuota",
+          "method": "POST",
+          "path": "/v1/saas/metering/reserve",
+          "resource": "saas",
+          "signature": "client.saas.reserveMeteringQuota(body, requestOptions?)"
+        },
+        "submitDeveloperEvidence": {
+          "member": "developerIntelligence.submitEvidence",
+          "method": "POST",
+          "path": "/cli/managed/developer-evidence",
+          "resource": "developerIntelligence",
+          "signature": "client.developerIntelligence.submitEvidence(body, requestOptions?)"
+        }
+      },
+      "package_directory": "../codejackrabbit-sdk",
+      "package_manifest": "package.json",
+      "reference": "api.md",
+      "renderer": "javascript"
+    }
+  ]
+}
